@@ -415,6 +415,16 @@ class GNSSStreamer:
                 if elapsed >= 0.95 * per:
                     self._msgfilter[identity] = (per, toc)
                     return False
+                # check if a message of the same type has been sent
+                # in the last 0.5 seconds (note the message filter
+                # will be unreliable if the NTRIP source is transmitting
+                # at more than 1Hz)
+                # TODO: check if the GNSSEpoch of the message sent less
+                # than 0.5 seconds is the same as the GNSSEpoch of the
+                # current message. If not, filter the message.
+                if elapsed < 0.5:
+                    self._msgfilter[identity] = (per, toc)
+                    return False
 
         return True
 
