@@ -162,17 +162,15 @@ test = ["Sphinx (>=6.1.3)", "black (>=23.1)", "coverage (>=7.2)", "pylint (>=2.1
 
 [[package]]
 name = "pyrtcm"
-version = "1.0.8"
-description = "RTCM3 protocol parser"
+version = "1.0.5"
+description = "RTCM3 Protocol Parser"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pyrtcm-1.0.8-py3-none-any.whl", hash = "sha256:b48624747ac1980dcda54abb1b83843e6e60bd6e0c5fe61289296a9cfe0ab143"},
+    {file = "pyrtcm-1.0.5-py3-none-any.whl", hash = "sha256:7fa15d60ea566381acdc5360b4efcd2fa6d7afb93ae85f397797c6ff52b458ae"},
+    {file = "pyrtcm-1.0.5.tar.gz", hash = "sha256:0b50280276979e1da716ce8fdaa8f12ba4ebd99a2d2e87db01b57ffd685edd6b"},
 ]
-
-[package.extras]
-test = ["Sphinx (>=6.1.3)", "black (>=23.1)", "pylint (>=2.17)", "pytest (>=7.2)", "pytest-cov (>=4.0)", "sphinx-rtd-theme (>=1.2.0)"]
 
 [[package]]
 name = "pyserial"
@@ -209,25 +207,21 @@ test = ["Sphinx (>=6.1.3)", "black (>=23.1)", "pylint (>=2.17)", "pytest (>=7.2)
 
 [[package]]
 name = "pyubx2"
-version = "1.2.26"
-description = "UBX protocol parser and generator"
+version = "1.2.22"
+description = "UBX Protocol Parser"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pyubx2-1.2.26-py3-none-any.whl", hash = "sha256:f828c419d852c92513a5f73d46d9fcfc76087266c8ecd17bd31f31c2310974dc"},
-    {file = "pyubx2-1.2.26.tar.gz", hash = "sha256:0698704dd11d5f6f38bcde5b5a6eb89c0a81f530629214c674ee4a7e8dc94f40"},
+    {file = "pyubx2-1.2.22-py3-none-any.whl", hash = "sha256:f1c31ed98260d4414e3197a0af71db80c6d8d608710561854597dd6cfe178fb1"},
+    {file = "pyubx2-1.2.22.tar.gz", hash = "sha256:ad4e97b6c1a2cf6c03872c1ab6f567515e289638963a03251c548c1616dfaa71"},
 ]
 
 [package.dependencies]
-pynmeagps = ">=1.0.23"
-pyrtcm = ">=1.0.8"
-
-[package.extras]
-deploy = ["build", "pip", "setuptools (>=66.0)", "wheel"]
-test = ["Sphinx", "bandit", "black", "isort", "pylint", "pytest", "pytest-cov", "sphinx-rtd-theme"]
+pynmeagps = ">=1.0.20"
+pyrtcm = ">=1.0.5"
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.7"
-content-hash = "6bc4d8a35ab269aa507e6abb2074cd4c6cf33e1e8d8739abc68edafa88f46b51"
+content-hash = "4a16c9ff641232d76ddb88f9ec2974c697cec43c66604f3f7d295df855436f2f"

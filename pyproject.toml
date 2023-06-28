@@ -10,7 +10,8 @@ authors = ["Aidan Cottuli <aidan.cottuli@ghd.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-pyubx2 = "^1.2.23"
+pyubx2 = "1.2.22"
+pyrtcm = "1.0.5"
 pyspartn = "^0.1.4"
 pyserial = "^3.5"
 paho-mqtt = "^1.6.1"
